@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-### Michigan State University Coding Boot Camp
-
 # React Recipe App
+
+### Michigan State University Coding Boot Camp
 
 ## Table of Contents
 
@@ -14,13 +13,9 @@
 * [Requirements](#Project-Requirements)
 * [Members](#Project-Members)
 
-_________
-
 ## Description
 
 The target audience for this Recipe app are users who ...
-
-_________
 
 ## Links
 
@@ -30,13 +25,9 @@ Our React Recipe App is deployed on Heroku.
 
 * [GitHub repository](https://github.com/stephanie-hall/project-3)
 
-_________
-
 ## API
 
 [Recipe API](https://developer.edamam.com/edamam-recipe-api)
-
-_________
 
 ## How to get started with this project
 
@@ -70,12 +61,10 @@ Once registered and/or logged in, the profile page opens. On the profile page, y
 
 ### To create the app from the files in our team's GitHub repository
 
-*update*
+*update
 copy the github repo and clone into your own terminal
 in the terminal type in npm i to install all the necessary dependinces
 to run to app type npm start
-
-_________
 
 ## Project Requirements
 
@@ -91,8 +80,6 @@ _________
 * Must have a folder structure that meets the MVC paradigm
 * Must meet good quality coding standards (indentation, scoping, naming)
 * Must protect API keys in Node with environment variables
-
-_________
 
 ### Project Members
 
