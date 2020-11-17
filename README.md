@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+### Michigan State University Coding Boot Camp
+
+>>>>>>> 4f53ad0deee80fae020ae524684f9ccfbc051ffe
 # React Recipe App
 
 ### Michigan State University Coding Boot Camp
