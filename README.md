@@ -1,4 +1,4 @@
-# React Recipe App
+# React Recipe Finder
 
 ### Michigan State University Coding Boot Camp
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-The target audience for this Recipe app are users who ...
+The target audience for this Recipe app is users who want to search for any type of food and recieve multiple different recipe options as a result. As a user you are able to log in and save your recipes that you like so you can find them easy the next time you log in. You are also able to use the app without logging in if that is what you prefer.
 
 ## Links
 
@@ -32,6 +32,8 @@ Our React Recipe App is deployed on Heroku.
 ## How to get started with this project
 
 ### To use the app
+
+*Need to update
 
 Visit the Heroku link above.
 
@@ -57,14 +59,13 @@ Once registered and/or logged in, the profile page opens. On the profile page, y
 
 ![Profile Page]()
 
-*update info about how to use app
-
 ### To create the app from the files in our team's GitHub repository
 
-*update
-copy the github repo and clone into your own terminal
-in the terminal type in npm i to install all the necessary dependinces
-to run to app type npm start
+1. On github copy our project repo from the code dropdown and clone into your own file in your terminal.
+
+2. With visual studio code, in the terminal type npm i to install all the necessary dependinces.
+
+3. To run the app type npm start into your terminal within visual studio code.
 
 ## Project Requirements
 
