@@ -35,17 +35,17 @@ Our React Recipe App is deployed on Heroku.
 
 Visit the Heroku link above.
 
-![Sign in](client\public\images\readme1.PNG)
+![Sign in](client/public/images/readme1.PNG)
 
 The first page you see will be a sign up/sign in page. You will need to create a login and sign in to reach the next page.
 
-![Home page](client\public\images\readme2.PNG)
+![Home page](client/public/images/readme2.PNG)
 
 Once you are logged in you will be able to see the home page which includes a search bar and a few example recipes.
 
-![Search lasagna](client\public\images\readme3.PNG)
+![Search lasagna](client/public/images/readme3.PNG)
 
-![Search chicken](client\public\images\readme4.PNG)
+![Search chicken](client/public/images/readme4.PNG)
 
 You are able to search for a specific meal you want a recipe for or you can search an item such as chicken and get a few recipe's that include chicken
 
