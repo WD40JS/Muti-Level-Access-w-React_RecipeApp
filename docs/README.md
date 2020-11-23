@@ -1,116 +1,78 @@
-# M.E.R.N Passport MySQL
-![GitHub stars](https://img.shields.io/github/stars/Vincent440/passport-mern-sql?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Vincent440/passport-mern-sql?style=social)
+# React Recipe Finder
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](../LICENSE)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-![David](https://img.shields.io/david/Vincent440/passport-mern-sql)
-![GitHub repo size](https://img.shields.io/github/repo-size/Vincent440/passport-mern-sql)
+### Michigan State University Coding Boot Camp
 
-[DEMO](https://passport-mern.Herokuapp.com/) on Heroku, the dyno may take up to 15 seconds on first reques, please be patient.
+## Table of Contents
 
-Node.js using the Express framework with a React client application using MySQL to log the user in with passport with the passport-local strategy using a username and password. Using bootstrap for basic UI with React-bootstrap
+* [Description](#Description)
+* [Links](#Links)
+* [API](#API)
+* [How to](#How-to-get-started-with-this-project)
+* [use the app](#To-use-the-app)
+* [create the app](#To-create-the-app-from-the-files-in-our-team's-GitHub-repository)
+* [Requirements](#Project-Requirements)
+* [Members](#Project-Members)
 
-My intentions creating this repository was to learn passport, as well as create a good amount of _example code for others to help them create a successful user login system with mysql express react and node.js._
-Not the Sequelize ORM that would take some modifications to setup.
+## Description
 
-## Getting Started
+The target audience for this Recipe app is users who want to search for any type of food and recieve multiple different recipe options as a result. As a user you are able to log in and save your recipes that you like so you can find them easy the next time you log in. You are also able to use the app without logging in if that is what you prefer.
 
-Currently to run the application you will need to:
+## Links
 
-* Clone the repository locally
+Our React Recipe App is deployed on Heroku.
 
-```bash
-git clone https://github.com/Vincent440/passport-mern-sql.git
-```
+* [Heroku-deployed app](https://msu-project-3.herokuapp.com/)
 
-* Create a `.env` File and store all the database connection information,
-Or any other environment variables that will change depending on where the application is hosted.
+* [GitHub repository](https://github.com/stephanie-hall/project-3)
 
-Option 1
+## API
 
-`echo` 
+[Recipe API](https://developer.edamam.com/edamam-recipe-api)
 
-Update the command with your specific environment and copy and run it to create a `.env` file with the key value pairs required to run the application.
+## How to get started with this project
 
-```
-echo PORT=3001 >> .env && echo DB_NAME=passportmern >> .env && echo DB_HOST=localhost >> .env && echo DB_USER=root >> .env && echo DB_PORT=3306 >> .env && echo DB_PW=<your password here> >> .env && echo MY_SECRET=your-most-secret-of-secrets-here >> .env
-```
+### To use the app
 
-Option 2
+Visit the Heroku link above.
 
-create the `.env` file 
+![Sign in](public\img\readme1.PNG)
 
-```bash
-touch .env
-```
+The first page you see will be a sign up/sign in page. You will need to create a login and sign in to reach the next page.
 
-Then copy and paste the key values in and update them with your local config
-```env
-# Port to host application on.
-PORT=3001
+![Home page](public\img\readme2.PNG)
 
-# Name of the mysql database you will be connecting to.
-DB_NAME=mernpassportexample
+Once you are logged in you will be able to see the home page which includes a search bar and a few example recipes.
 
-# Host name for connecting to MySQL database
-DB_HOST=hostname
+![Search lasagna](public\img\readme3.PNG)
 
-#Port to connect to MySQL database
-DB_PORT=3306
+![Search chicken](public\img\readme4.PNG)
 
-# User for connecting to MySQL database
-DB_USER=userstringhere
+You are able to search for a specific meal you want a recipe for or you can search an item such as chicken and get a few recipe's that include chicken
 
-# Password for connecting to MySQL database
-DB_PW=passwordstringhere
+### To create the app from the files in our team's GitHub repository
 
-# Secret for cookies/sessions 
-MY_SECRET=your-most-secret-of-secrets-here
+1. On github copy our project repo from the code dropdown and clone into your own file in your terminal.
 
-```
+2. With visual studio code, in the terminal type npm i to install all the necessary dependinces.
 
-* Using `yarn` to pull in the required packages:
+3. To run the app type npm start into your terminal within visual studio code.
 
-```bash
-yarn install
-```
-If you do not have `yarn` you could use `npm`, but you'd need to update the scripts in the `package.json` file to reflect the usage of `npm` instead of `yarn`.
+## Project Requirements
 
-* Run the Database schema.sql to set up the database structure.
+* Must use ReactJS in some way
+* Must use a Node and Express Web Server
+* Must be backed by a MySQL or MongoDB database with a Sequelize or Mongoose ORM
+* Must have both GET and POST routes for retrieving and adding new data
+* Must deploy this application using Heroku with data.
+* Follow our guide on deploying MERN applications to Heroku to do so
+* Must utilize at least 2 libraries, packages, or technologies that we haven't discussed
+* Must allow for or involve the authentication of users in some way
+* Must have a polished front end/UI
+* Must have a folder structure that meets the MVC paradigm
+* Must meet good quality coding standards (indentation, scoping, naming)
+* Must protect API keys in Node with environment variables
 
-passport-mern-sql/config/[schema.sql](../config/schema.sql)
+### Project Members
 
-* Run the Database seeds.sql file
-
-passport-mern-sql/config/[seeds.sql](../config/seeds.sql)
-
-Then you should be all set to start making changes to the application.
-
-### Hosting the application
-
-In order to deploy this application:
-
-you will need to ensure have a mysql database attached to your server. The way this application is set up the `.env` variables will need to match how the local database `.env` variables are set up. 
-
-I used Heroku to deploy my application.
-to do the same you will need to:
-
-* Have a Heroku account or create one.
-* **assuming you have an account.** log in to the Heroku website.
-* Create a new app and name it whatever you would like to match your applications initial Heroku url. 
-* Open `your application name` from the dashboard on Heroku's website and select `Deploy`
-* Select `Github` and login to Github to connect your account to Heroku
-* After succesfully connecting to Github connect the app to the github repository
-  * Select the Github account you are using and search for the repository using the search box provided.
-  * If you searched successfully you will see the repository you are looking for and have a *Connect* button.
-  * After pressing *Connect* you have the option to either select a branch and setup automatic deployments or manually deploy whenever you want to test your latest build in a branch. up to you.
-
----
-
-## License
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](../LICENSE)
-
-### Contributors
-
-Created with :heart: by [Vincent Shury](https://www.vshury.com).
+* @WD40JS
+* @stephanie-hall
